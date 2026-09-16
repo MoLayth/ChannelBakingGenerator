@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="position: relative; background-color: black; height: 100dvh; width: 100%; padding: 10px; box-sizing: border-box;">
+        <div class="plapla">            
+                <div style="display: flex; position: absolute; top: 10px; right: 10px; flex-direction: row-reverse; gap: 5px;">
+                    <div class="profile-and-links">
+                        <a href="">
+                            <img src="images/Clippy Guts.png" style="flex: 1; border-radius: 50%; box-sizing: border-box; width: 100%;" />
+                        </a>
+                        <a href="https://sketchfab.com/Mo_Layth" target="_blank">
+                            <img class="animated-button " src="images/sketchfabIcon.svg" style="width: 100%; padding: 0px 2px 0px 2px; box-sizing: border-box;"/>
+                        </a>
+
+                        <a href="https://www.instagram.com/binlayth/" target="_blank">
+                            <img class="animated-button " src="images/InstagramIcon.svg" style="width: 100%; padding: 0px 2px 0px 2px; box-sizing: border-box;" />
+                        </a>
+                        <a href="https://www.tiktok.com/@molayth0/">
+                            <img class="animated-button " src="images/TiktokIcon.svg" style="width: 100%; padding: 0px 6px 0px 6px; box-sizing: border-box;"/>
+                        </a>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=molaythdev@gmail.com" target="_blank">
+                            <img class="animated-button " src="images/logo_gmail_lockup_dark_2x_r7.png" style="width: 100%; padding: 0px 6px 0px 6px; box-sizing: border-box;"/>
+                        </a>
+                    </div>
+                </div>
+
+
+            <div class="Row-Flex-Container" style="height: 100%; aspect-ratio: 1/1; max-width: calc(100% - 150px);">
+                <div class="column-Flex-Container" id="dropImagesContainer"></div>
+
+                <div style="flex: 2;"></div>
+
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                    <label> Result </label>
+                    <div  class="drop-Image-filed" style="height: 200px; width: 200px; border-radius: 15px; cursor:auto;">
+                        <canvas id="resultImage" style="height: 100%; image-rendering: pixelated;"></canvas>
+                    </div>
+                    <button class="animated-button" onclick="Download()" style="margin-top:20px;">Download</button>
+                </div>
+            </div>
+
+            <div class="message">
+                <label id="messageLabel" style="color: white; text-align: center;padding: 10px; font-size: inherit;"></label>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
